@@ -8,7 +8,10 @@ cordova.commandProxy.add("ContextMenu", {
         for(var n = 0; items.length > n; n++) {
             var item = items[n];
             
-            contextMenu.commands.append(new Windows.UI.Popups.UICommand(item.title, null, n+1));
+            if(typeof item.isSeparator !== 'undefined' && item.isSeparator)
+                contextMenu.commands.append(new Windows.UI.Popups.UICommandSeparator);
+            else
+                contextMenu.commands.append(new Windows.UI.Popups.UICommand(item.title, null, n+1));
         }
         
         contextMenu.showAsync(pos).done(function (invokedCommand) {
