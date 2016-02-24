@@ -1,0 +1,51 @@
+<!--
+    cordova-plugin-context
+    Copyright © 2016 filfat Studios AB
+    Repo: https://github.com/filfat-Studios-AB/cordova-plugin-context-menu
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    id="cordova-plugin-context-menu"
+    version="0.0.0">
+    <name>Context Menu</name>
+    <description>Fullscreen mode</description>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=5.0.0"/>
+    </engines>
+
+    <asset src="www/ContextMenu.js" target="js/ContextMenu.js"/>
+
+    <js-module src="www/ContextMenu.js" name="ContextMenu">
+        <clobbers target="ContextMenu" />
+    </js-module>
+
+    <!-- android -->
+    <!--platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ContextMenu" >
+                <param name="android-package" value="com.filfatstudios.contextmenu.ContextMenu"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ContextMenu.java" target-dir="src/com/filfatstudios/ContextMenu" />
+    </platform-->
+    
+    <!-- browser -->
+    <platform name="browser">
+        <js-module src="src/browser/ContextMenuProxy.js" name="ContextMenuProxy">
+            <runs />
+        </js-module>
+    </platform>
+    
+    <!-- windows -->
+  	<platform name="windows">
+    	<js-module src="src/windows/ContextMenuProxy.js" name="ContextMenuProxy">
+    		<merges target="" />
+    	</js-module>
+	</platform>
+</plugin>

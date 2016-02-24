@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-context-menu",
+  "version": "0.0.0",
+  "description": "A cordova plugin for creating context mdnus",
+  "author": "filfat-studios-ab",
+  "license": "MIT",
+  "homepage": "https://github.com/filfat-Studios-AB/cordova-plugin-context-menu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filfat-Studios-AB/cordova-plugin-context-menu.git"
+  },
+  "cordova": {
+    "id": "cordova-plugin-context-menu",
+    "platforms": [
+      "android",
+      "browser",
+      "ios",
+      "windows"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "context",
+    "plugin",
+    "menu",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-browser",
+    "cordova-ios",
+    "cordova-windows"
+  ],
+  "bugs": {
+    "url": "https://github.com/filfat-Studios-AB/cordova-plugin-context-menu/issues"
+  }
+}
