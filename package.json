@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-context-menu",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A cordova plugin for creating context mdnus",
   "author": "filfat-studios-ab",
   "license": "MIT",
@@ -12,9 +12,6 @@
   "cordova": {
     "id": "cordova-plugin-context-menu",
     "platforms": [
-      "android",
-      "browser",
-      "ios",
       "windows"
     ]
   },
