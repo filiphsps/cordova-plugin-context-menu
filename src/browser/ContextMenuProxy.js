@@ -1,4 +1,4 @@
-cordova.commandProxy.add("ContextMenu", {
+module.exports = {
     open: function (successCallback, errorCallback, para) {
         /* Vars */
         var title = para.title;
@@ -25,4 +25,4 @@ cordova.commandProxy.add("ContextMenu", {
         contextmenu_wrapper.appendChild(contextmenu);
         document.getElementsByTagName('body')[0].appendChild(contextmenu_wrapper);
     }
-});
+};
