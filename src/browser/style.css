@@ -18,19 +18,28 @@
     width: 100%;
     max-width: 460px;
     height: auto;
-    max-height: 330px;
+    max-height: 310px;
     margin: auto;
     background: rgb(75,75,75);
-    border: 2px solid rgba(125,125,125);
 }
 
 #cordova-context-menu .cordova-context-menu-entry {
     display: block;
     height: 60px;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 25px;
     font-size: 16px;
     line-height: 60px;
+    color: #fff;
+    cursor: pointer;
+}
+#cordova-context-menu span {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 40px;
     color: #fff;
     cursor: pointer;
 }
