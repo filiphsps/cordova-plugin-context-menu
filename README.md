@@ -3,6 +3,9 @@
 
 
 ## Platforms
+* Android 4.4.2
+* Browser
+* iOS 7
 * Windows 10 Build 10240+
 
 ## Installation
