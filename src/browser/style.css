@@ -1,4 +1,5 @@
 #cordova-context-menu-wrapper {
+    pointer-events: all;
     z-index: 9999999999999;
     position: fixed;
     top: 0; right: 0; bottom: 25px;
