@@ -9,7 +9,7 @@
     xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     id="cordova-plugin-context-menu"
-    version="0.1.0">
+    version="0.1.1">
     <name>Context Menu</name>
     <description>Simple native-ish cordova context menu.</description>
     <license>MIT</license>
